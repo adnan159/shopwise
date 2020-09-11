@@ -14,33 +14,9 @@
 <title><?php bloginfo('title');?></title>
 <!-- Favicon Icon -->
 <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png">
-<!-- Animation CSS -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css">	
-<!-- Latest Bootstrap min CSS -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/bootstrap/css/bootstrap.min.css">
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
-<!-- Icon Font CSS -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/all.min.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/ionicons.min.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/themify-icons.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/linearicons.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/flaticon.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/simple-line-icons.css">
-<!--- owl carousel CSS-->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/owlcarousel/css/owl.carousel.min.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/owlcarousel/css/owl.theme.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/owlcarousel/css/owl.theme.default.min.css">
-<!-- Magnific Popup CSS -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/magnific-popup.css">
-<!-- Slick CSS -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick-theme.css">
-<!-- Style CSS -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 
 <?php wp_head(); ?>
 
@@ -147,8 +123,8 @@
     	<div class="container">
         	<div class="nav_block">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo_light" src="assets/images/logo_light.png" alt="logo" />
-                    <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
+                    <img class="logo_light" src="<?php echo get_template_directory_uri();?>/assets/images/logo_light.png" alt="logo" />
+                    <img class="logo_dark" src="<?php echo get_template_directory_uri();?>/assets/images/logo_dark.png" alt="logo" />
                 </a>
                 <div class="contact_phone order-md-last">
                     <i class="linearicons-phone-wave"></i>
@@ -223,7 +199,7 @@
                                             </li>
                                             <li class="mega-menu-col col-lg-5">
                                                 <div class="header-banner2">
-                                                    <img src="assets/images/menu_banner1.jpg" alt="menu_banner1">
+                                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/menu_banner1.jpg" alt="menu_banner1">
                                                     <div class="banne_info">
                                                         <h6>10% Off</h6>
                                                         <h4>New Arrival</h4>
@@ -231,7 +207,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="header-banner2">
-                                                    <img src="assets/images/menu_banner2.jpg" alt="menu_banner2">
+                                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/menu_banner2.jpg" alt="menu_banner2">
                                                     <div class="banne_info">
                                                         <h6>15% Off</h6>
                                                         <h4>Men's Fashion</h4>
@@ -276,7 +252,7 @@
                                             </li>
                                             <li class="mega-menu-col col-lg-5">
                                                 <div class="header-banner2">
-                                                    <a href="#"><img src="assets/images/menu_banner4.jpg" alt="menu_banner4"></a>
+                                                    <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/menu_banner4.jpg" alt="menu_banner4"></a>
                                                 </div>
                                             </li>
                                         </ul>
@@ -316,7 +292,7 @@
                                             </li>
                                             <li class="mega-menu-col col-lg-5">
                                                 <div class="header-banner2">
-                                                    <a href="#"><img src="assets/images/menu_banner5.jpg" alt="menu_banner5"></a>
+                                                    <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/menu_banner5.jpg" alt="menu_banner5"></a>
                                                 </div>
                                             </li>
                                         </ul>
@@ -460,7 +436,7 @@
                                         <div class="d-lg-flex menu_banners">
                                             <div class="col-lg-6">
                                                 <div class="header-banner">
-                                                    <img src="assets/images/menu_banner1.jpg" alt="menu_banner1">
+                                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/menu_banner1.jpg" alt="menu_banner1">
                                                     <div class="banne_info">
                                                         <h6>10% Off</h6>
                                                         <h4>New Arrival</h4>
@@ -470,7 +446,7 @@
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="header-banner">
-                                                    <img src="assets/images/menu_banner2.jpg" alt="menu_banner2">
+                                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/menu_banner2.jpg" alt="menu_banner2">
                                                     <div class="banne_info">
                                                         <h6>15% Off</h6>
                                                         <h4>Men's Fashion</h4>
@@ -577,7 +553,7 @@
                                                     <div class="header_banner_content">
                                                         <div class="shop_banner">
                                                             <div class="banner_img overlay_bg_40">
-                                                                <img src="assets/images/shop_banner2.jpg" alt="shop_banner2"/>
+                                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner2.jpg" alt="shop_banner2"/>
                                                             </div> 
                                                             <div class="shop_bn_content">
                                                                 <h6 class="text-uppercase shop_subtitle">New Collection</h6>
@@ -602,12 +578,12 @@
                                     <ul class="cart_list">
                                         <li>
                                             <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                            <a href="#"><img src="assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable product 001</a>
+                                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable product 001</a>
                                             <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>78.00</span>
                                         </li>
                                         <li>
                                             <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                            <a href="#"><img src="assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare sed consequat</a>
+                                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare sed consequat</a>
                                             <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>81.00</span>
                                         </li>
                                     </ul>
@@ -647,7 +623,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item background_bg" data-img-src="assets/images/banner5.jpg">
+                        <div class="carousel-item background_bg" data-img-src="<?php echo get_template_directory_uri();?>/assets/images/banner5.jpg">
                             <div class="banner_slide_content banner_content_inner">
                                 <div class="col-lg-8 col-10">
                                     <div class="banner_content overflow-hidden">
@@ -658,7 +634,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item background_bg" data-img-src="assets/images/banner6.jpg">
+                        <div class="carousel-item background_bg" data-img-src="<?php echo get_template_directory_uri();?>/assets/images/banner6.jpg">
                             <div class="banner_slide_content banner_content_inner">
                                 <div class="col-lg-8 col-10">
                                     <div class="banner_content overflow-hidden">
@@ -726,7 +702,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img1.jpg" alt="product_img1">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img1.jpg" alt="product_img1">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -769,7 +745,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img2.jpg" alt="product_img2">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img2.jpg" alt="product_img2">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -813,7 +789,7 @@
                                     <span class="pr_flash">New</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img3.jpg" alt="product_img3">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img3.jpg" alt="product_img3">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -854,7 +830,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img4.jpg" alt="product_img4">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img4.jpg" alt="product_img4">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -897,7 +873,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img5.jpg" alt="product_img5">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img5.jpg" alt="product_img5">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -941,7 +917,7 @@
                                     <span class="pr_flash bg-danger">Hot</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img6.jpg" alt="product_img6">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img6.jpg" alt="product_img6">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -984,7 +960,7 @@
                                     <span class="pr_flash bg-success">Sale</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img7.jpg" alt="product_img7">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img7.jpg" alt="product_img7">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1027,7 +1003,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img8.jpg" alt="product_img8">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img8.jpg" alt="product_img8">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1074,7 +1050,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img9.jpg" alt="product_img9">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img9.jpg" alt="product_img9">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1118,7 +1094,7 @@
                                     <span class="pr_flash bg-danger">Hot</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img6.jpg" alt="product_img6">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img6.jpg" alt="product_img6">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1160,7 +1136,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img11.jpg" alt="product_img11">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img11.jpg" alt="product_img11">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1203,7 +1179,7 @@
                                     <span class="pr_flash bg-success">Sale</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img7.jpg" alt="product_img7">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img7.jpg" alt="product_img7">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1246,7 +1222,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img8.jpg" alt="product_img8">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img8.jpg" alt="product_img8">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1289,7 +1265,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img5.jpg" alt="product_img5">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img5.jpg" alt="product_img5">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1332,7 +1308,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img12.jpg" alt="product_img12">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img12.jpg" alt="product_img12">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1376,7 +1352,7 @@
                                     <span class="pr_flash bg-danger">Hot</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img10.jpg" alt="product_img10">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img10.jpg" alt="product_img10">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1423,7 +1399,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img5.jpg" alt="product_img5">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img5.jpg" alt="product_img5">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1466,7 +1442,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img12.jpg" alt="product_img12">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img12.jpg" alt="product_img12">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1509,7 +1485,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img9.jpg" alt="product_img9">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img9.jpg" alt="product_img9">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1553,7 +1529,7 @@
                                     <span class="pr_flash bg-success">Sale</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img10.jpg" alt="product_img10">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img10.jpg" alt="product_img10">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1597,7 +1573,7 @@
                                     <span class="pr_flash bg-danger">Hot</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img7.jpg" alt="product_img7">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img7.jpg" alt="product_img7">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1640,7 +1616,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img11.jpg" alt="product_img11">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img11.jpg" alt="product_img11">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1682,7 +1658,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img8.jpg" alt="product_img8">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img8.jpg" alt="product_img8">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1726,7 +1702,7 @@
                                     <span class="pr_flash">Sale</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img6.jpg" alt="product_img6">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img6.jpg" alt="product_img6">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1772,7 +1748,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img4.jpg" alt="product_img4">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img4.jpg" alt="product_img4">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1815,7 +1791,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img9.jpg" alt="product_img9">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img9.jpg" alt="product_img9">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1858,7 +1834,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img8.jpg" alt="product_img8">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img8.jpg" alt="product_img8">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1902,7 +1878,7 @@
                                     <span class="pr_flash">New</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img1.jpg" alt="product_img1">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img1.jpg" alt="product_img1">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1945,7 +1921,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img12.jpg" alt="product_img12">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img12.jpg" alt="product_img12">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1988,7 +1964,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img6.jpg" alt="product_img6">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img6.jpg" alt="product_img6">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -2031,7 +2007,7 @@
                                     <span class="pr_flash bg-success">Sale</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img7.jpg" alt="product_img7">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img7.jpg" alt="product_img7">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -2074,7 +2050,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img11.jpg" alt="product_img11">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img11.jpg" alt="product_img11">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -2127,7 +2103,7 @@
     	<div class="row">
         	<div class="col-md-6">
             	<div class="single_banner">
-                	<img src="assets/images/shop_banner_img1.jpg" alt="shop_banner_img1">
+                	<img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img1.jpg" alt="shop_banner_img1">
                     <div class="single_banner_info">
                         <h5 class="single_bn_title1">Super Sale</h5>
                         <h3 class="single_bn_title">New Collection</h3>
@@ -2137,7 +2113,7 @@
             </div>
             <div class="col-md-6">
             	<div class="single_banner">
-                	<img src="assets/images/shop_banner_img2.jpg" alt="shop_banner_img2">
+                	<img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img2.jpg" alt="shop_banner_img2">
                     <div class="single_banner_info">
                         <h3 class="single_bn_title">New Season</h3>
                         <h4 class="single_bn_title1">Sale 40% Off</h4>
@@ -2172,7 +2148,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img1.jpg" alt="product_img1">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img1.jpg" alt="product_img1">
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
@@ -2215,7 +2191,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img2.jpg" alt="product_img2">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img2.jpg" alt="product_img2">
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
@@ -2259,7 +2235,7 @@
                             <span class="pr_flash">New</span>
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img3.jpg" alt="product_img3">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img3.jpg" alt="product_img3">
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
@@ -2300,7 +2276,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img4.jpg" alt="product_img4">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img4.jpg" alt="product_img4">
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
@@ -2343,7 +2319,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img5.jpg" alt="product_img5">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img5.jpg" alt="product_img5">
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
@@ -2396,21 +2372,21 @@
         	<div class="col-md-4">
             	<div class="sale_banner">
                 	<a class="hover_effect1" href="#">
-                		<img src="assets/images/shop_banner_img3.jpg" alt="shop_banner_img3">
+                		<img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img3.jpg" alt="shop_banner_img3">
                     </a>
                 </div>
             </div>
             <div class="col-md-4">
             	<div class="sale_banner">
                 	<a class="hover_effect1" href="#">
-                		<img src="assets/images/shop_banner_img4.jpg" alt="shop_banner_img4">
+                		<img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img4.jpg" alt="shop_banner_img4">
                     </a>
                 </div>
             </div>
             <div class="col-md-4">
             	<div class="sale_banner">
                 	<a class="hover_effect1" href="#">
-                		<img src="assets/images/shop_banner_img5.jpg" alt="shop_banner_img5">
+                		<img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img5.jpg" alt="shop_banner_img5">
                     </a>
                 </div>
             </div>
@@ -2438,7 +2414,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img1.jpg" alt="product_img1">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img1.jpg" alt="product_img1">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2461,7 +2437,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img6.jpg" alt="product_img6">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img6.jpg" alt="product_img6">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2484,7 +2460,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img12.jpg" alt="product_img12">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img12.jpg" alt="product_img12">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2509,7 +2485,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img2.jpg" alt="product_img2">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img2.jpg" alt="product_img2">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2532,7 +2508,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img7.jpg" alt="product_img7">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img7.jpg" alt="product_img7">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2555,7 +2531,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img10.jpg" alt="product_img10">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img10.jpg" alt="product_img10">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2580,7 +2556,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img3.jpg" alt="product_img3">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img3.jpg" alt="product_img3">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2600,7 +2576,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img8.jpg" alt="product_img8">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img8.jpg" alt="product_img8">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2623,7 +2599,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img13.jpg" alt="product_img13">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img13.jpg" alt="product_img13">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2648,7 +2624,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img4.jpg" alt="product_img4">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img4.jpg" alt="product_img4">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2671,7 +2647,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img9.jpg" alt="product_img9">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img9.jpg" alt="product_img9">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2694,7 +2670,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img14.jpg" alt="product_img14">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img14.jpg" alt="product_img14">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2716,7 +2692,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img5.jpg" alt="product_img5">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img5.jpg" alt="product_img5">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2739,7 +2715,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img11.jpg" alt="product_img11">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img11.jpg" alt="product_img11">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2762,7 +2738,7 @@
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
-                                    <img src="assets/images/product_img15.jpg" alt="product_img15">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/product_img15.jpg" alt="product_img15">
                                 </a>
                             </div>
                             <div class="product_info">
@@ -2804,32 +2780,32 @@
             	<div class="client_logo carousel_slider owl-carousel owl-theme nav_style3" data-dots="false" data-nav="true" data-margin="30" data-loop="true" data-autoplay="true" data-responsive='{"0":{"items": "2"}, "480":{"items": "3"}, "767":{"items": "4"}, "991":{"items": "5"}}'>
                 	<div class="item">
                     	<div class="cl_logo">
-                        	<img src="assets/images/cl_logo1.png" alt="cl_logo"/>
+                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo1.png" alt="cl_logo"/>
                         </div>
                     </div>
                     <div class="item">
                         <div class="cl_logo">
-                        	<img src="assets/images/cl_logo2.png" alt="cl_logo"/>
+                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo2.png" alt="cl_logo"/>
                         </div>
                     </div>
                     <div class="item">
                         <div class="cl_logo">
-                        	<img src="assets/images/cl_logo3.png" alt="cl_logo"/>
+                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo3.png" alt="cl_logo"/>
                         </div>
                     </div>
                     <div class="item">
                         <div class="cl_logo">
-                        	<img src="assets/images/cl_logo4.png" alt="cl_logo"/>
+                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo4.png" alt="cl_logo"/>
                         </div>
                     </div>
                     <div class="item">
                         <div class="cl_logo">
-                        	<img src="assets/images/cl_logo5.png" alt="cl_logo"/>
+                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo5.png" alt="cl_logo"/>
                         </div>
                     </div>
                     <div class="item">
                         <div class="cl_logo">
-                        	<img src="assets/images/cl_logo6.png" alt="cl_logo"/>
+                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo6.png" alt="cl_logo"/>
                         </div>
                     </div>
                 </div>
@@ -2872,7 +2848,7 @@
                 <div class="col-lg-4 col-md-12 col-sm-12">
                 	<div class="widget">
                         <div class="footer_logo">
-                            <a href="#"><img src="assets/images/logo_dark.png" alt="logo"/></a>
+                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/logo_dark.png" alt="logo"/></a>
                         </div>
                         <p class="mb-3">If you are going to use of Lorem Ipsum need to be sure there isn't anything hidden of text</p>
                         <ul class="contact_info">
@@ -2919,14 +2895,14 @@
                 	<div class="widget">
                         <h6 class="widget_title">Instagram</h6>
                         <ul class="widget_instafeed instafeed_col4">
-                            <li><a href="#"><img src="assets/images/insta_img1.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
-                            <li><a href="#"><img src="assets/images/insta_img2.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
-                            <li><a href="#"><img src="assets/images/insta_img3.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
-                            <li><a href="#"><img src="assets/images/insta_img4.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
-                            <li><a href="#"><img src="assets/images/insta_img5.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
-                            <li><a href="#"><img src="assets/images/insta_img6.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
-                            <li><a href="#"><img src="assets/images/insta_img7.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
-                            <li><a href="#"><img src="assets/images/insta_img8.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/insta_img1.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/insta_img2.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/insta_img3.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/insta_img4.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/insta_img5.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/insta_img6.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/insta_img7.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/insta_img8.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -2997,11 +2973,11 @@
                 </div>
                 <div class="col-lg-4">
                     <ul class="footer_payment text-center text-lg-right">
-                        <li><a href="#"><img src="assets/images/visa.png" alt="visa"></a></li>
-                        <li><a href="#"><img src="assets/images/discover.png" alt="discover"></a></li>
-                        <li><a href="#"><img src="assets/images/master_card.png" alt="master_card"></a></li>
-                        <li><a href="#"><img src="assets/images/paypal.png" alt="paypal"></a></li>
-                        <li><a href="#"><img src="assets/images/amarican_express.png" alt="amarican_express"></a></li>
+                        <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/visa.png" alt="visa"></a></li>
+                        <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/discover.png" alt="discover"></a></li>
+                        <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/master_card.png" alt="master_card"></a></li>
+                        <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/paypal.png" alt="paypal"></a></li>
+                        <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/amarican_express.png" alt="amarican_express"></a></li>
                     </ul>
                 </div>
             </div>
@@ -3011,35 +2987,6 @@
 <!-- END FOOTER -->
 
 <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a> 
-
-<!-- Latest jQuery --> 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-1.12.4.min.js"></script> 
-<!-- popper min js -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/popper.min.js"></script>
-<!-- Latest compiled and minified Bootstrap --> 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/bootstrap/js/bootstrap.min.js"></script> 
-<!-- owl-carousel min js  --> 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/owlcarousel/js/owl.carousel.min.js"></script> 
-<!-- magnific-popup min js  --> 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/magnific-popup.min.js"></script> 
-<!-- waypoints min js  --> 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/waypoints.min.js"></script> 
-<!-- parallax js  --> 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/parallax.js"></script> 
-<!-- countdown js  --> 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.countdown.min.js"></script> 
-<!-- imagesloaded js --> 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/imagesloaded.pkgd.min.js"></script>
-<!-- isotope min js --> 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/isotope.min.js"></script>
-<!-- jquery.dd.min js -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.dd.min.js"></script>
-<!-- slick js -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/slick.min.js"></script>
-<!-- elevatezoom js -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.elevatezoom.js"></script>
-<!-- scripts js --> 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/scripts.js"></script>
 
 <?php wp_footer(); ?>
 
