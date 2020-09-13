@@ -51,20 +51,20 @@ function shopwise_css_js(){
 	wp_enqueue_style('style');
 
 	//js
-	wp_register_script('jquery',get_template_directory_uri().'/assets/js/jquery-1.12.4.min.js');
-	wp_register_script('popper',get_template_directory_uri().'/assets/js/popper.min.js');
-	wp_register_script('bootstrap-min',get_template_directory_uri().'/assets/bootstrap/js/bootstrap.min.js');
-	wp_register_script('owl-carousel',get_template_directory_uri().'/assets/owlcarousel/js/owl.carousel.min.js');
-	wp_register_script('magnific-popup-js',get_template_directory_uri().'/assets/js/magnific-popup.min.js');
-	wp_register_script('waypoints',get_template_directory_uri().'/assets/js/waypoints.min.js');
-	wp_register_script('parallax',get_template_directory_uri().'/assets/js/parallax.js');
-	wp_register_script('jquery',get_template_directory_uri().'/assets/js/jquery.countdown.min.js');
-	wp_register_script('imagesloaded',get_template_directory_uri().'/assets/js/imagesloaded.pkgd.min.js');
-	wp_register_script('isotope',get_template_directory_uri().'/assets/js/isotope.min.js');
-	wp_register_script('jquery-dd',get_template_directory_uri().'/assets/js/jquery.dd.min.js');
-	wp_register_script('slick-js',get_template_directory_uri().'/assets/js/slick.min.js');
-	wp_register_script('elevatezoom',get_template_directory_uri().'/assets/js/jquery.elevatezoom.js');
-	wp_register_script('scripts',get_template_directory_uri().'/assets/js/scripts.js');
+	wp_register_script('jquery',get_template_directory_uri().'/assets/js/jquery-1.12.4.min.js',array(),false,true);
+	wp_register_script('popper',get_template_directory_uri().'/assets/js/popper.min.js',array(),false,true);
+	wp_register_script('bootstrap-min',get_template_directory_uri().'/assets/bootstrap/js/bootstrap.min.js',array(),false,true);
+	wp_register_script('owl-carousel',get_template_directory_uri().'/assets/owlcarousel/js/owl.carousel.min.js',array(),false,true);
+	wp_register_script('magnific-popup-js',get_template_directory_uri().'/assets/js/magnific-popup.min.js',array(),false,true);
+	wp_register_script('waypoints',get_template_directory_uri().'/assets/js/waypoints.min.js',array(),false,true);
+	wp_register_script('parallax',get_template_directory_uri().'/assets/js/parallax.js',array(),false,true);
+	wp_register_script('jquery',get_template_directory_uri().'/assets/js/jquery.countdown.min.js',array(),false,true);
+	wp_register_script('imagesloaded',get_template_directory_uri().'/assets/js/imagesloaded.pkgd.min.js',array(),false,true);
+	wp_register_script('isotope',get_template_directory_uri().'/assets/js/isotope.min.js',array(),false,true);
+	wp_register_script('jquery-dd',get_template_directory_uri().'/assets/js/jquery.dd.min.js',array(),false,true);
+	wp_register_script('slick-js',get_template_directory_uri().'/assets/js/slick.min.js',array(),false,true);
+	wp_register_script('elevatezoom',get_template_directory_uri().'/assets/js/jquery.elevatezoom.js',array(),false,true);
+	wp_register_script('scripts',get_template_directory_uri().'/assets/js/scripts.js',array(),false,true);
 
 
 	wp_enqueue_script('jquery');
