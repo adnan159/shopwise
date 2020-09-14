@@ -6,9 +6,30 @@ function shopwise_default_function(){
 	add_theme_support('custom-header');
 	add_theme_support('post-thumbnails');
 
+	load_theme_textdomain('shopwise',get_template_directory_uri().'/languages');
+
+	register_nav_menus(array(
+		'main-menu'		=>__('Main Menu','shopwise'),
+	));
+
+
 
 }
 add_action('after_setup_theme','shopwise_default_function');
+
+//adding additional class in li
+function add_additional_class_on_li($classes, $item, $args) {
+    $classes['class'] = "dropdown";
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+//adding additional class in anchor link
+function add_additional_class_on_anchor($classes, $item, $args) {
+    $classes['class'] = "nav-link dropdown-toggle";
+    return $classes;
+}
+add_filter('nav_menu_link_attributes', 'add_additional_class_on_anchor', 1, 3);
 
 
 //enqueue css and js
@@ -86,10 +107,6 @@ function shopwise_css_js(){
 
 }
 add_action('wp_enqueue_scripts','shopwise_css_js');
-
-
-
-
 
 
 

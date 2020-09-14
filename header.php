@@ -358,10 +358,17 @@
                     <nav class="navbar navbar-expand-lg">
                         <button class="navbar-toggler side_navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarSidetoggle" aria-expanded="false"> 
                             <span class="ion-android-menu"></span>
-                        </button> 
+                        </button>
                         <div class="collapse navbar-collapse mobile_side_menu" id="navbarSidetoggle">
-                            <ul class="navbar-nav">
-                                <li class="dropdown">
+
+                                <?php
+                                    wp_nav_menu(array(
+                                        'theme-location'    => 'main-menu',
+                                        'menu_class'        => 'navbar-nav',
+                                        'container'         => ' ',
+                                    ));
+                                ?>
+                                <!-- <li class="dropdown">
                                     <a data-toggle="dropdown" class="nav-link dropdown-toggle active" href="#">Home</a>
                                     <div class="dropdown-menu">
                                         <ul> 
@@ -436,7 +443,7 @@
                                         <div class="d-lg-flex menu_banners">
                                             <div class="col-lg-6">
                                                 <div class="header-banner">
-                                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/menu_banner1.jpg" alt="menu_banner1">
+                                                    <img src="assets/images/menu_banner1.jpg" alt="menu_banner1">
                                                     <div class="banne_info">
                                                         <h6>10% Off</h6>
                                                         <h4>New Arrival</h4>
@@ -446,7 +453,7 @@
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="header-banner">
-                                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/menu_banner2.jpg" alt="menu_banner2">
+                                                    <img src="assets/images/menu_banner2.jpg" alt="menu_banner2">
                                                     <div class="banne_info">
                                                         <h6>15% Off</h6>
                                                         <h4>Men's Fashion</h4>
@@ -553,7 +560,7 @@
                                                     <div class="header_banner_content">
                                                         <div class="shop_banner">
                                                             <div class="banner_img overlay_bg_40">
-                                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner2.jpg" alt="shop_banner2"/>
+                                                                <img src="assets/images/shop_banner2.jpg" alt="shop_banner2"/>
                                                             </div> 
                                                             <div class="shop_bn_content">
                                                                 <h6 class="text-uppercase shop_subtitle">New Collection</h6>
@@ -567,9 +574,9 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a class="nav-link nav_item" href="contact.html">Contact Us</a></li> 
-                            </ul>
+                                <li><a class="nav-link nav_item" href="contact.html">Contact Us</a></li>  -->
                         </div>
+
                         <ul class="navbar-nav attr-nav align-items-center">
                             <li><a href="#" class="nav-link"><i class="linearicons-user"></i></a></li>
                             <li><a href="#" class="nav-link"><i class="linearicons-heart"></i><span class="wishlist_count">0</span></a></li>
