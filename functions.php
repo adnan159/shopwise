@@ -12,7 +12,15 @@ function shopwise_default_function(){
 		'main-menu'		=>__('Main Menu','shopwise'),
 	));
 
+	register_post_type('shopwise_slider',array(
+		'labels'	=> array(
+			'name'			=> 'Sliders',
+			'add_new_item'	=> __('Add Slider Here','shopwise')
+		),
+		'public'	=> true,
+		'supports'	=> array('title','editor','thumbnail','custom-fields')
 
+	));
 
 }
 add_action('after_setup_theme','shopwise_default_function');
