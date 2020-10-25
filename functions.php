@@ -9,7 +9,8 @@ function shopwise_default_function(){
 	load_theme_textdomain('shopwise',get_template_directory_uri().'/languages');
 
 	register_nav_menus(array(
-		'main-menu'		=>__('Main Menu','shopwise'),
+		'main-menu'		=> __('Main Menu','shopwise'),
+		'cat-menu'		=> __('Catagory Menu','shopwise'),
 	));
 
 	register_post_type('shopwise_slider',array(
@@ -25,16 +26,17 @@ function shopwise_default_function(){
 }
 add_action('after_setup_theme','shopwise_default_function');
 
-//adding additional class in li
 function add_additional_class_on_li($classes, $item, $args) {
-    $classes['class'] = "dropdown";
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
 //adding additional class in anchor link
 function add_additional_class_on_anchor($classes, $item, $args) {
-    $classes['class'] = "nav-link dropdown-toggle";
+    $classes['class'] = "nav-link dropdown-toggler";
     return $classes;
 }
 add_filter('nav_menu_link_attributes', 'add_additional_class_on_anchor', 1, 3);
