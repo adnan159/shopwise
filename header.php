@@ -131,7 +131,7 @@
                     <span>123-456-7689</span>
                 </div>
                 <div class="product_search_form">
-                    <form>
+                    <form method="GET" action="<?php bloginfo('home'); ?>">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="custom_select">
@@ -145,7 +145,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <input class="form-control" placeholder="Search Product..." required=""  type="text">
+                            <input class="form-control" placeholder="Search Product..." required=""  type="text" name="s">
                             <button type="submit" class="search_btn"><i class="linearicons-magnifier"></i></button>
                         </div>
                     </form>
