@@ -2,44 +2,37 @@
 
 <!-- START SECTION BANNER -->
 <div class="banner_section slide_medium shop_banner_slider staggered-animation-wrap">
-	<div class="container">
-    	<div class="row">
-        	<div class="col-lg-9 offset-lg-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 offset-lg-3">
                 <div id="carouselExampleControls" class="carousel slide light_arrow" data-ride="carousel">
                     <div class="carousel-inner">
+
+                        <?php
+                            $slideritem = new WP_Query(array(
+                                'post_type'     => 'shopwise_slider',
+                                'post_per_page' => 3, 
+                            ));
+
+                        ?>
+
+                        <?php while($slideritem->have_posts()): $slideritem->the_post(); ?>
+                        <?php global $post; ?>
+
                         <div class="carousel-item active background_bg" data-img-src="<?php echo get_template_directory_uri();?>/assets/images/banner4.jpg">
                             <div class="banner_slide_content banner_content_inner">
                                 <div class="col-lg-8 col-10">
                                     <div class="banner_content overflow-hidden">
-                                        <h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">Get up to 50% off Today Only!</h5>
-                                        <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">Woman Fashion</h2>
-                                        <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="shop-left-sidebar.html" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
+                                        <h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s"><?php the_content(); ?></h5>
+                                        <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s"><?php the_title(); ?></h2>
+                                        <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="<?php echo get_post_meta($post->ID,'shop_now',true);?>" data-animation="slideInLeft" data-animation-delay="1.5s">SHOP NOW</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item background_bg" data-img-src="<?php echo get_template_directory_uri();?>/assets/images/banner5.jpg">
-                            <div class="banner_slide_content banner_content_inner">
-                                <div class="col-lg-8 col-10">
-                                    <div class="banner_content overflow-hidden">
-                                        <h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">50% off in all products</h5>
-                                        <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">Man Fashion</h2>
-                                        <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="shop-left-sidebar.html" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item background_bg" data-img-src="<?php echo get_template_directory_uri();?>/assets/images/banner6.jpg">
-                            <div class="banner_slide_content banner_content_inner">
-                                <div class="col-lg-8 col-10">
-                                    <div class="banner_content overflow-hidden">
-                                        <h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">Taking your Viewing Experience to Next Level</h5>
-                                        <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">Summer Sale</h2>
-                                        <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="shop-left-sidebar.html" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                        <?php endwhile;?>
+                        
                     </div>
                     <ol class="carousel-indicators indicators_style1">
                         <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
@@ -58,10 +51,10 @@
 
 <!-- START SECTION SHOP -->
 <div class="section small_pb">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-            	<div class="heading_tab_header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="heading_tab_header">
                     <div class="heading_s2">
                         <h2>Exclusive Products</h2>
                     </div>
@@ -86,11 +79,11 @@
                     </div>
                 </div>
             </div>
-		</div>
+        </div>
         <div class="row">
-        	<div class="col-12">
+            <div class="col-12">
                 <div class="tab_slider">
-                	<div class="tab-pane fade show active" id="arrival" role="tabpanel" aria-labelledby="arrival-tab">
+                    <div class="tab-pane fade show active" id="arrival" role="tabpanel" aria-labelledby="arrival-tab">
                         <div class="product_slider carousel_slider owl-carousel owl-theme nav_style1" data-loop="true" data-dots="false" data-nav="true" data-margin="20" data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "1199":{"items": "4"}}'>
                             <div class="item">
                                 <div class="product">
@@ -1493,11 +1486,11 @@
 
 <!-- START SECTION BANNER --> 
 <div class="section pb_20 small_pt">
-	<div class="container">
-    	<div class="row">
-        	<div class="col-md-6">
-            	<div class="single_banner">
-                	<img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img1.jpg" alt="shop_banner_img1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="single_banner">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img1.jpg" alt="shop_banner_img1">
                     <div class="single_banner_info">
                         <h5 class="single_bn_title1">Super Sale</h5>
                         <h3 class="single_bn_title">New Collection</h3>
@@ -1506,8 +1499,8 @@
                 </div>
             </div>
             <div class="col-md-6">
-            	<div class="single_banner">
-                	<img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img2.jpg" alt="shop_banner_img2">
+                <div class="single_banner">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img2.jpg" alt="shop_banner_img2">
                     <div class="single_banner_info">
                         <h3 class="single_bn_title">New Season</h3>
                         <h4 class="single_bn_title1">Sale 40% Off</h4>
@@ -1522,23 +1515,23 @@
 
 <!-- START SECTION SHOP -->
 <div class="section small_pt small_pb">
-	<div class="container">
-    	<div class="row">
-			<div class="col-md-12">
-            	<div class="heading_tab_header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading_tab_header">
                     <div class="heading_s2">
                         <h2>Deal Of The Days</h2>
                     </div>
                     <div class="deal_timer">
-                    	<div class="countdown_time countdown_style1" data-time="2020/08/28 13:22:15"></div>
+                        <div class="countdown_time countdown_style1" data-time="2020/08/28 13:22:15"></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-            	<div class="product_slider carousel_slider owl-carousel owl-theme nav_style1" data-loop="true" data-dots="false" data-nav="true" data-margin="20" data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "1199":{"items": "4"}}'>
-                	<div class="item">
+                <div class="product_slider carousel_slider owl-carousel owl-theme nav_style1" data-loop="true" data-dots="false" data-nav="true" data-margin="20" data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "1199":{"items": "4"}}'>
+                    <div class="item">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -1754,33 +1747,33 @@
                     </div>
                 </div>
             </div>
-		</div>
+        </div>
     </div>
 </div>
 <!-- END SECTION SHOP -->
 
 <!-- START SECTION BANNER --> 
 <div class="section pb_20 small_pt">
-	<div class="container-fluid px-2">
-    	<div class="row no-gutters">
-        	<div class="col-md-4">
-            	<div class="sale_banner">
-                	<a class="hover_effect1" href="#">
-                		<img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img3.jpg" alt="shop_banner_img3">
+    <div class="container-fluid px-2">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <div class="sale_banner">
+                    <a class="hover_effect1" href="#">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img3.jpg" alt="shop_banner_img3">
                     </a>
                 </div>
             </div>
             <div class="col-md-4">
-            	<div class="sale_banner">
-                	<a class="hover_effect1" href="#">
-                		<img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img4.jpg" alt="shop_banner_img4">
+                <div class="sale_banner">
+                    <a class="hover_effect1" href="#">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img4.jpg" alt="shop_banner_img4">
                     </a>
                 </div>
             </div>
             <div class="col-md-4">
-            	<div class="sale_banner">
-                	<a class="hover_effect1" href="#">
-                		<img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img5.jpg" alt="shop_banner_img5">
+                <div class="sale_banner">
+                    <a class="hover_effect1" href="#">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/shop_banner_img5.jpg" alt="shop_banner_img5">
                     </a>
                 </div>
             </div>
@@ -1791,10 +1784,10 @@
 
 <!-- START SECTION SHOP -->
 <div class="section small_pt pb_20">
-	<div class="container">
-    	<div class="row">
-			<div class="col-md-12">
-            	<div class="heading_tab_header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading_tab_header">
                     <div class="heading_s2">
                         <h2>Featured Products</h2>
                     </div>
@@ -1803,8 +1796,8 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-            	<div class="product_slider product_list carousel_slider owl-carousel owl-theme nav_style3" data-loop="true" data-dots="false" data-nav="true" data-margin="20" data-responsive='{"0":{"items": "1"}, "767":{"items": "2"}, "991":{"items": "3"}, "1199":{"items": "3"}}'>
-                	<div class="item">
+                <div class="product_slider product_list carousel_slider owl-carousel owl-theme nav_style3" data-loop="true" data-dots="false" data-nav="true" data-margin="20" data-responsive='{"0":{"items": "1"}, "767":{"items": "2"}, "991":{"items": "3"}, "1199":{"items": "3"}}'>
+                    <div class="item">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -2152,17 +2145,17 @@
                     </div>
                 </div>
             </div>
-		</div>
+        </div>
     </div>
 </div>
 <!-- END SECTION SHOP -->
 
 <!-- START SECTION CLIENT LOGO -->
 <div class="section small_pt">
-	<div class="container">
-    	<div class="row">
-			<div class="col-md-12">
-            	<div class="heading_tab_header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading_tab_header">
                     <div class="heading_s2">
                         <h2>Our Brands</h2>
                     </div>
@@ -2170,36 +2163,36 @@
             </div>
         </div>
         <div class="row">
-        	<div class="col-12">
-            	<div class="client_logo carousel_slider owl-carousel owl-theme nav_style3" data-dots="false" data-nav="true" data-margin="30" data-loop="true" data-autoplay="true" data-responsive='{"0":{"items": "2"}, "480":{"items": "3"}, "767":{"items": "4"}, "991":{"items": "5"}}'>
-                	<div class="item">
-                    	<div class="cl_logo">
-                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo1.png" alt="cl_logo"/>
+            <div class="col-12">
+                <div class="client_logo carousel_slider owl-carousel owl-theme nav_style3" data-dots="false" data-nav="true" data-margin="30" data-loop="true" data-autoplay="true" data-responsive='{"0":{"items": "2"}, "480":{"items": "3"}, "767":{"items": "4"}, "991":{"items": "5"}}'>
+                    <div class="item">
+                        <div class="cl_logo">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo1.png" alt="cl_logo"/>
                         </div>
                     </div>
                     <div class="item">
                         <div class="cl_logo">
-                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo2.png" alt="cl_logo"/>
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo2.png" alt="cl_logo"/>
                         </div>
                     </div>
                     <div class="item">
                         <div class="cl_logo">
-                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo3.png" alt="cl_logo"/>
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo3.png" alt="cl_logo"/>
                         </div>
                     </div>
                     <div class="item">
                         <div class="cl_logo">
-                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo4.png" alt="cl_logo"/>
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo4.png" alt="cl_logo"/>
                         </div>
                     </div>
                     <div class="item">
                         <div class="cl_logo">
-                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo5.png" alt="cl_logo"/>
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo5.png" alt="cl_logo"/>
                         </div>
                     </div>
                     <div class="item">
                         <div class="cl_logo">
-                        	<img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo6.png" alt="cl_logo"/>
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/cl_logo6.png" alt="cl_logo"/>
                         </div>
                     </div>
                 </div>
@@ -2211,8 +2204,8 @@
 
 <!-- START SECTION SUBSCRIBE NEWSLETTER -->
 <div class="section bg_dark small_pt small_pb">
-	<div class="container">	
-    	<div class="row align-items-center">	
+    <div class="container"> 
+        <div class="row align-items-center">    
             <div class="col-md-6">
                 <div class="heading_s1 mb-md-0 heading_light">
                     <h3>Subscribe Our Newsletter</h3>
